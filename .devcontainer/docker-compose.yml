@@ -36,6 +36,7 @@ services:
       - SHELL=/bin/bash
     volumes:
       - ..:/workspace:cached
+      - ../data/:/workspace/frappe-bench/temp
     working_dir: /workspace/frappe-bench
     ports:
       - 8000-8005:8000-8005
